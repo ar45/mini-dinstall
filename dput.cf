@@ -1,0 +1,8 @@
+[internal]
+# replace with actual host
+fqdn = localhost
+login = apt-repo
+incoming = "/home/apt-repo/public_html/apt/mini-dinstall/incoming"
+method = scp
+allow_unsigned_uploads = 0
+post_upload_command     = ssh apt-repo@localhost /usr/bin/mini-dinstall -b
